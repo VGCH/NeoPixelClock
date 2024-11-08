@@ -121,8 +121,8 @@ void main_process(){
 void digitset(int digit, int queue){
    int gu = 7 * queue;
    for (int j = 0; j < 7; j++) {
-            bool pix = pgm_read_word(&(digits_pix[digit][j]));    // Чтение значения из PROGMEM
-            if(pix){
+            int pix = pgm_read_word(&(digits_pix[digit][j]));    // Чтение значения из PROGMEM
+            if(pix == 1){
               pixels.setPixelColor(j+gu, pixels.Color(settings.RGB_C[0],settings.RGB_C[1],settings.RGB_C[2]));
             }else{
               pixels.setPixelColor(j+gu, pixels.Color(0,0,0));

@@ -1,4 +1,4 @@
-const bool digits_pix[20][7] PROGMEM = {
+const int digits_pix[20][7] PROGMEM = {
     {1, 1, 1, 0, 1, 1, 1},                  // 0
     {1, 0, 0, 0, 0, 0, 1},                  // 1
     {1, 1, 0, 1, 1, 1, 0},                  // 2
